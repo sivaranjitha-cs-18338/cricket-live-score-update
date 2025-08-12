@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "targets": [
+      "cricket-live-score-update"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client",
+    "plugin": "zcatalyst-cli-plugin-angular"
+  }
+}

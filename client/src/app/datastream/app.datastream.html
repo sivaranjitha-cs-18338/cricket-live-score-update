@@ -1,0 +1,404 @@
+<div class="cricket-container">
+  <div class="header">
+    <h1>🏏 Live Cricket Scores</h1>
+    <div class="connection-status">
+      <span class="status-indicator" [ngClass]="getConnectionStatusClass()">
+        {{ connectionStatus }}
+      </span>
+      <div class="connection-info">
+        <small>Messages: {{ messagesReceived }} | Last Updated: {{ formatTime(lastUpdated) }}</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button (click)="reconnectWebSocket()" class="btn btn-primary" [disabled]="loading">
+      🔄 Reconnect
+    </button>
+    <button (click)="publishTestUpdate()" class="btn btn-secondary">
+      📡 Publish Test Update
+    </button>
+  </div>
+
+  <div *ngIf="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Connecting to live cricket scores...</p>
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    <p>{{ error }}</p>
+    <button (click)="reconnectWebSocket()" class="btn btn-primary">
+      🔄 Retry Connection
+    </button>
+  </div>
+
+  <div class="matches-grid" *ngIf="!loading && matches.length > 0">
+    <div *ngFor="let match of matches" class="match-card" [ngClass]="getMatchStatusClass(match)">
+      <div class="match-header">
+        <h3>{{ match.name }}</h3>
+        <span class="format-badge">{{ match.format }}</span>
+      </div>
+      
+      <div class="match-info">
+        <div class="venue">📍 {{ match.venue }}</div>
+        <div class="date">📅 {{ match.date }}</div>
+      </div>
+
+      <div class="teams">
+        <div class="team">
+          <div class="team-name">{{ match.team1.name }}</div>
+          <div class="score">{{ match.team1.score }}</div>
+          <div class="overs">({{ match.team1.overs }} overs)</div>
+        </div>
+        
+        <div class="vs">VS</div>
+        
+        <div class="team">
+          <div class="team-name">{{ match.team2.name }}</div>
+          <div class="score">{{ match.team2.score }}</div>
+          <div class="overs">({{ match.team2.overs }} overs)</div>
+        </div>
+      </div>
+
+      <div class="match-status" [ngClass]="getMatchStatusClass(match)">
+        {{ match.status }}
+      </div>
+
+      <div *ngIf="match.current_over" class="current-over">
+        <strong>Latest:</strong> {{ match.current_over }}
+      </div>
+
+      <div *ngIf="match.live" class="live-indicator">
+        <span class="live-dot"></span>
+        LIVE
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!loading && matches.length === 0" class="no-matches">
+    <p>No cricket matches available at the moment.</p>
+    <button (click)="loadInitialData()" class="btn btn-primary">
+      🔄 Reload
+    </button>
+  </div>
+</div>
+
+<style>
+.cricket-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.connection-status {
+  text-align: right;
+}
+
+.status-indicator {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.status-connected {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-connecting {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-disconnected {
+  background-color: #f1f3f4;
+  color: #5f6368;
+}
+
+.connection-info {
+  margin-top: 0.25rem;
+  color: #666;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+.match-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #e0e0e0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.match-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.match-card.status-live {
+  border-left-color: #e74c3c;
+  background: linear-gradient(135deg, #fff 0%, #fef9f9 100%);
+}
+
+.match-card.status-completed {
+  border-left-color: #27ae60;
+}
+
+.match-card.status-upcoming {
+  border-left-color: #f39c12;
+}
+
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.match-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.format-badge {
+  background-color: #3498db;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.match-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.team {
+  text-align: center;
+  flex: 1;
+}
+
+.team-name {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 0.25rem;
+}
+
+.overs {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+}
+
+.vs {
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.match-status {
+  background-color: #ecf0f1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.match-status.status-live {
+  background-color: #fdeaea;
+  color: #c0392b;
+}
+
+.match-status.status-completed {
+  background-color: #eafaf1;
+  color: #1e7e34;
+}
+
+.current-over {
+  background-color: #f8f9fa;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border-left: 3px solid #17a2b8;
+  margin-bottom: 1rem;
+}
+
+.live-indicator {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #7f8c8d;
+}
+
+.no-matches {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .matches-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .teams {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .vs {
+    transform: rotate(90deg);
+  }
+}
+</style>

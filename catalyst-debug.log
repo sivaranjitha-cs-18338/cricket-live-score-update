@@ -1,0 +1,992 @@
+[debug] [2025-08-12T05:25:07.271Z] : 
+[debug] [2025-08-12T05:25:07.272Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T05:25:07.272Z] : Command:      /opt/homebrew/Cellar/node/24.4.1/bin/node /opt/homebrew/bin/catalyst serve
+[debug] [2025-08-12T05:25:07.272Z] : CLI Version:  1.18.0-beta.12
+[debug] [2025-08-12T05:25:07.272Z] : Platform:     darwin
+[debug] [2025-08-12T05:25:07.272Z] : Node Version: v24.4.1
+[debug] [2025-08-12T05:25:07.272Z] : Time:         Tue Aug 12 2025 10:55:07 GMT+0530 (India Standard Time)
+[debug] [2025-08-12T05:25:07.272Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T05:25:07.272Z] : 
+[debug] [2025-08-12T05:25:07.475Z] : > authorizing via signed-in user option
+[debug] [2025-08-12T05:25:07.475Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2025-08-12T05:25:07.480Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052 
+
+[debug] [2025-08-12T05:25:07.572Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:25:07 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:25:07.573Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/environment 
+
+[debug] [2025-08-12T05:25:07.627Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:25:07 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:25:07.758Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2025-08-12T05:25:08.064Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:25:08 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:25:08.067Z] : unknown eol undefined hence skipping check
+[info] [2025-08-12T05:25:08.436Z] : 
+[info] [2025-08-12T05:25:08.436Z] : ℹ Client[angular-app]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2025-08-12T05:25:08.436Z] : 
+[info] [2025-08-12T05:25:08.646Z] : 
+[info] [2025-08-12T05:25:08.646Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2025-08-12T05:25:08.646Z] : ℹ cricket-live-score-update: http://localhost:3000/server/cricket-live-score-update/
+[info] [2025-08-12T05:25:08.646Z] : 
+[info] [2025-08-12T05:25:08.646Z] : 
+[info] [2025-08-12T05:25:08.646Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-08-12T05:25:08.646Z] : ℹ client[angular-app]: http://localhost:3000/app/
+[info] [2025-08-12T05:25:08.646Z] : 
+[info] [2025-08-12T05:25:09.555Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2025-08-12T05:25:12.090Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   2.51 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 238.11 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 140.06 kB | 
+[Angular-plugin]: main.js               | main          |  64.06 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  48.30 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   2.99 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:25:12.078Z - Hash: 00617c0044dba56b - Time: 1712ms
+[info] [2025-08-12T05:25:12.090Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:5000, open your browser on http://127.0.0.1:5000/app **
+[Angular-plugin]: 
+[info] [2025-08-12T05:25:12.091Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T05:25:12.099Z] : [Angular-plugin]: Please visit this url to access angular-app: http://localhost:3000/app/
+[debug] [2025-08-12T05:25:12.144Z] : proxy closed
+[debug] [2025-08-12T05:25:15.407Z] : proxy closed
+[info] [2025-08-12T05:27:45.153Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.00617c0044dba56b.hot-update.js       | main    | 93.54 kB | 
+[Angular-plugin]: runtime.js, runtime.00617c0044dba56b.hot-update.js | runtime | 48.65 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:27:45.150Z - Hash: b53f1483dbb17105 - Time: 759ms
+[info] [2025-08-12T05:27:45.153Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:239:35 - error TS2339: Property 'http' does not exist on type 'DatastreamComponent'.
+[Angular-plugin]: 
+[Angular-plugin]: 239       const response = await this.http.get<any>(`${this.functionUrl}/publish-cricket-update`).toPromise();
+[Angular-plugin]:                                       ~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:27:45.153Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:28:11.000Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.00617c0044dba56b.hot-update.js       | main    | 93.57 kB | 
+[Angular-plugin]: runtime.js, runtime.00617c0044dba56b.hot-update.js | runtime | 48.65 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:28:10.996Z - Hash: 5f04e5dcfb0e6922 - Time: 211ms
+[info] [2025-08-12T05:28:11.000Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[debug] [2025-08-12T05:28:45.774Z] : proxy closed
+[info] [2025-08-12T05:35:36.080Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: vendor.js, vendor.5f04e5dcfb0e6922.hot-update.js   | vendor  |  2.60 MB | 
+[Angular-plugin]: main.js, main.5f04e5dcfb0e6922.hot-update.js       | main    | 93.80 kB | 
+[Angular-plugin]: runtime.js, runtime.5f04e5dcfb0e6922.hot-update.js | runtime | 51.61 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 2 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:35:36.079Z - Hash: 935c4e114b72a22f - Time: 692ms
+[info] [2025-08-12T05:35:36.081Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: node_modules/@zcatalyst/datastreams/dist-types/web-socket.d.ts:7:30 - error TS7016: Could not find a declaration file for module 'events'. '/Users/ranjitha-18338/Documents/datastreams/JS/client/node_modules/events/events.js' implicitly has an 'any' type.
+[Angular-plugin]:   Try `npm i --save-dev @types/events` if it exists or add a new declaration (.d.ts) file containing `declare module 'events';`
+[Angular-plugin]: 
+[Angular-plugin]: 7 import { EventEmitter } from 'events';
+[Angular-plugin]:                                ~~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:96:19 - error TS2339: Property 'on' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 96       datastreams.on('open', () => {
+[Angular-plugin]:                      ~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:19 - error TS2339: Property 'on' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.on('message', (event) => {
+[Angular-plugin]:                       ~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:34 - error TS7006: Parameter 'event' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.on('message', (event) => {
+[Angular-plugin]:                                      ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:19 - error TS2339: Property 'on' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.on('error', (error) => {
+[Angular-plugin]:                       ~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:32 - error TS7006: Parameter 'error' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.on('error', (error) => {
+[Angular-plugin]:                           
+[info] [2025-08-12T05:35:36.081Z] : [Angular-plugin]:          ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:117:19 - error TS2339: Property 'on' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 117       datastreams.on('close', () => {
+[Angular-plugin]:                       ~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:35:36.081Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:37:09.074Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: vendor.js                                          | vendor  |  2.51 MB | 
+[Angular-plugin]: main.js, main.5f04e5dcfb0e6922.hot-update.js       | main    | 92.89 kB | 
+[Angular-plugin]: runtime.js, runtime.5f04e5dcfb0e6922.hot-update.js | runtime | 48.65 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 2 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:37:09.072Z - Hash: f6a8fea8b273f9b7 - Time: 475ms
+[info] [2025-08-12T05:37:09.074Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:91:29 - error TS2304: Cannot find name 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 91     const datastreams = new DataStreamsWebSocket({
+[Angular-plugin]:                                ~~~~~~~~~~~~~~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:105:34 - error TS7006: Parameter 'event' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 105       datastreams.on('message', (event) => {
+[Angular-plugin]:                                      ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:112:32 - error TS7006: Parameter 'error' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 112       datastreams.on('error', (error) => {
+[Angular-plugin]:                                    ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:37:09.075Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:37:47.028Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.5f04e5dcfb0e6922.hot-update.js       | main    | 93.99 kB | 
+[Angular-plugin]: runtime.js, runtime.5f04e5dcfb0e6922.hot-update.js | runtime | 48.65 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:37:47.024Z - Hash: 8a3fa1137e0871db - Time: 220ms
+[info] [2025-08-12T05:37:47.028Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T05:38:19.187Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: vendor.js, vendor.8a3fa1137e0871db.hot-update.js   | vendor  |  2.60 MB | 
+[Angular-plugin]: main.js, main.8a3fa1137e0871db.hot-update.js       | main    | 93.26 kB | 
+[Angular-plugin]: runtime.js, runtime.8a3fa1137e0871db.hot-update.js | runtime | 51.61 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 2 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:38:19.186Z - Hash: 3a9e1ea12ecd1056 - Time: 445ms
+[info] [2025-08-12T05:38:19.188Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: node_modules/@zcatalyst/datastreams/dist-types/web-socket.d.ts:7:30 - error TS7016: Could not find a declaration file for module 'events'. '/Users/ranjitha-18338/Documents/datastreams/JS/client/node_modules/events/events.js' implicitly has an 'any' type.
+[Angular-plugin]:   Try `npm i --save-dev @types/events` if it exists or add a new declaration (.d.ts) file containing `declare module 'events';`
+[Angular-plugin]: 
+[Angular-plugin]: 7 import { EventEmitter } from 'events';
+[Angular-plugin]:                                ~~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:96:19 - error TS2339: Property 'on' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 96       datastreams.on('open', () => {
+[Angular-plugin]:                      ~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:19 - error TS2339: Property 'on' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.on('message', (event) => {
+[Angular-plugin]:                       ~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:34 - error TS7006: Parameter 'event' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.on('message', (event) => {
+[Angular-plugin]:                                      ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:19 - error TS2339: Property 'on' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.on('error', (error) => {
+[Angular-plugin]:                       ~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:32 - error TS7006: Parameter 'error' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.on('error', (error) => {
+[Angular-plugin]:                           
+[info] [2025-08-12T05:38:19.188Z] : [Angular-plugin]:          ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:116:19 - error TS2339: Property 'on' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 116       datastreams.on('close', () => {
+[Angular-plugin]:                       ~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:38:19.188Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:44:59.704Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: runtime.js, runtime.8a3fa1137e0871db.hot-update.js | runtime | 51.61 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 4 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:44:59.701Z - Hash: 7612f69646eb98d0 - Time: 227ms
+[info] [2025-08-12T05:44:59.704Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:2:38 - error TS2307: Cannot find module '@zcatalyst/datastreams' or its corresponding type declarations.
+[Angular-plugin]: 
+[Angular-plugin]: 2 import { DataStreamsWebSocket } from '@zcatalyst/datastreams';
+[Angular-plugin]:                                        ~~~~~~~~~~~~~~~~~~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:34 - error TS7006: Parameter 'event' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.on('message', (event) => {
+[Angular-plugin]:                                      ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:32 - error TS7006: Parameter 'error' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.on('error', (error) => {
+[Angular-plugin]:                                    ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:44:59.704Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:45:02.048Z] : [Angular-plugin]: 
+[Angular-plugin]: 5 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:45:02.046Z - Hash: 7612f69646eb98d0 - Time: 100ms
+[info] [2025-08-12T05:45:02.048Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:2:38 - error TS2307: Cannot find module '@zcatalyst/datastreams' or its corresponding type declarations.
+[Angular-plugin]: 
+[Angular-plugin]: 2 import { DataStreamsWebSocket } from '@zcatalyst/datastreams';
+[Angular-plugin]:                                        ~~~~~~~~~~~~~~~~~~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:34 - error TS7006: Parameter 'event' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.on('message', (event) => {
+[Angular-plugin]:                                      ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:32 - error TS7006: Parameter 'error' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.on('error', (error) => {
+[Angular-plugin]:                                    ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:45:02.048Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:45:08.359Z] : Shutting down server
+[debug] [2025-08-12T05:45:08.376Z] : proxy closed
+[info] [2025-08-12T05:45:08.563Z] : 
+[info] [2025-08-12T05:45:08.563Z] : ✔ Shutdown complete
+[debug] [2025-08-12T05:45:08.563Z] : NO ERRORS REGISTERED
+[debug] [2025-08-12T05:45:08.563Z] : EXEC ENDED with event: serve, message: success
+[debug] [2025-08-12T05:45:08.563Z] : TOTAL DURATION OF COMMAND EXEC : 1201092
+[debug] [2025-08-12T05:45:08.567Z] : >>>> HTTP REQUEST : POST https://consolefeature1.catalyst.localzoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-08-12T05:45:08.722Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:45:08 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:45:12.378Z] : 
+[debug] [2025-08-12T05:45:12.379Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T05:45:12.379Z] : Command:      /opt/homebrew/Cellar/node/24.4.1/bin/node /opt/homebrew/bin/catalyst serve
+[debug] [2025-08-12T05:45:12.380Z] : CLI Version:  1.18.0-beta.12
+[debug] [2025-08-12T05:45:12.380Z] : Platform:     darwin
+[debug] [2025-08-12T05:45:12.380Z] : Node Version: v24.4.1
+[debug] [2025-08-12T05:45:12.380Z] : Time:         Tue Aug 12 2025 11:15:12 GMT+0530 (India Standard Time)
+[debug] [2025-08-12T05:45:12.380Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T05:45:12.380Z] : 
+[debug] [2025-08-12T05:45:12.626Z] : > authorizing via signed-in user option
+[debug] [2025-08-12T05:45:12.627Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2025-08-12T05:45:12.632Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052 
+
+[debug] [2025-08-12T05:45:12.714Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:45:12 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:45:12.716Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/environment 
+
+[debug] [2025-08-12T05:45:12.781Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:45:12 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:45:12.922Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2025-08-12T05:45:13.173Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:45:13 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:45:13.175Z] : unknown eol undefined hence skipping check
+[info] [2025-08-12T05:45:13.595Z] : 
+[info] [2025-08-12T05:45:13.595Z] : ℹ Client[angular-app]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2025-08-12T05:45:13.595Z] : 
+[info] [2025-08-12T05:45:13.822Z] : 
+[info] [2025-08-12T05:45:13.822Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2025-08-12T05:45:13.822Z] : ℹ cricket-live-score-update: http://localhost:3000/server/cricket-live-score-update/
+[info] [2025-08-12T05:45:13.822Z] : 
+[info] [2025-08-12T05:45:13.822Z] : 
+[info] [2025-08-12T05:45:13.822Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-08-12T05:45:13.822Z] : ℹ client[angular-app]: http://localhost:3000/app/
+[info] [2025-08-12T05:45:13.822Z] : 
+[info] [2025-08-12T05:45:14.706Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2025-08-12T05:45:17.233Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   2.55 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 238.11 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 140.06 kB | 
+[Angular-plugin]: main.js               | main          |  63.66 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  49.80 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   3.03 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:45:17.229Z - Hash: 78f30c9e71cac125 - Time: 1715ms
+[info] [2025-08-12T05:45:17.234Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:105:52 - error TS18046: 'event' is of type 'unknown'.
+[Angular-plugin]: 
+[Angular-plugin]: 105         console.log('WebSocket message received:', event.data);
+[Angular-plugin]:                                                        ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:108:37 - error TS18046: 'event' is of type 'unknown'.
+[Angular-plugin]: 
+[Angular-plugin]: 108         this.handleWebSocketMessage(event.data);
+[Angular-plugin]:                                         ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:45:17.234Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:5000, open your browser on http://127.0.0.1:5000/app **
+[Angular-plugin]: 
+[info] [2025-08-12T05:45:17.234Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:45:34.259Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files | Names   | Raw Size
+[Angular-plugin]: main.js             | main    | 63.63 kB | 
+[Angular-plugin]: runtime.js          | runtime | 49.80 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:45:34.257Z - Hash: 50ff3577891f8682 - Time: 762ms
+[info] [2025-08-12T05:45:34.260Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:96:19 - error TS2339: Property 'onopen' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 96       datastreams.onopen = () => {
+[Angular-plugin]:                      ~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:19 - error TS2339: Property 'onmessage' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.onmessage = (event) => {
+[Angular-plugin]:                       ~~~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:32 - error TS7006: Parameter 'event' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.onmessage = (event) => {
+[Angular-plugin]:                                    ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:19 - error TS2339: Property 'onerror' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.onerror = (error) => {
+[Angular-plugin]:                       ~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:30 - error TS7006: Parameter 'error' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.onerror = (error) => {
+[Angular-plugin]:                                  ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:116:19 - error TS2551: Property 'onclose' does not exist on type 'DataStreamsWebSocket'. Did you mean 'close'?
+[Angular-plugin]: 
+[Angular-plugin]: 116       datastreams.onclose = () => {
+[Angular-plugin]:                       ~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]:   node_modules/@zcatalyst/datastreams/dist-types/web-socket.d.ts:136:5
+[Angular-plugin]:     136     close(): void;
+[Angular-plugin]:             ~~~~~
+[Angular-plugin]:     'close' is declared here.
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:45:34.260Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:45:54.561Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files | Names   | Raw Size
+[Angular-plugin]: main.js             | main    | 63.63 kB | 
+[Angular-plugin]: runtime.js          | runtime | 49.80 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:45:54.558Z - Hash: 8ffc0e84b7115232 - Time: 277ms
+[info] [2025-08-12T05:45:54.561Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:96:19 - error TS2339: Property 'onopen' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 96       datastreams.onopen = () => {
+[Angular-plugin]:                      ~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:19 - error TS2339: Property 'onmessage' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.onmessage = (event) => {
+[Angular-plugin]:                       ~~~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:32 - error TS7006: Parameter 'event' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.onmessage = (event) => {
+[Angular-plugin]:                                    ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:19 - error TS2339: Property 'onerror' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.onerror = (error) => {
+[Angular-plugin]:                       ~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:30 - error TS7006: Parameter 'error' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.onerror = (error) => {
+[Angular-plugin]:                                  ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:116:19 - error TS2551: Property 'onclose' does not exist on type 'DataStreamsWebSocket'. Did you mean 'close'?
+[Angular-plugin]: 
+[Angular-plugin]: 116       datastreams.onclose = () => {
+[Angular-plugin]:                       ~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]:   node_modules/@zcatalyst/datastreams/dist-types/web-socket.d.ts:136:5
+[Angular-plugin]:     136     close(): void;
+[Angular-plugin]:             ~~~~~
+[Angular-plugin]:     'close' is declared here.
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:45:54.562Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:46:07.319Z] : Shutting down server
+[debug] [2025-08-12T05:46:07.348Z] : proxy closed
+[info] [2025-08-12T05:46:07.478Z] : 
+[info] [2025-08-12T05:46:07.479Z] : ✔ Shutdown complete
+[debug] [2025-08-12T05:46:07.479Z] : NO ERRORS REGISTERED
+[debug] [2025-08-12T05:46:07.479Z] : EXEC ENDED with event: serve, message: success
+[debug] [2025-08-12T05:46:07.479Z] : TOTAL DURATION OF COMMAND EXEC : 54858
+[debug] [2025-08-12T05:46:07.485Z] : >>>> HTTP REQUEST : POST https://consolefeature1.catalyst.localzoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-08-12T05:46:07.581Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:46:07 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:46:16.299Z] : 
+[debug] [2025-08-12T05:46:16.302Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T05:46:16.302Z] : Command:      /opt/homebrew/Cellar/node/24.4.1/bin/node /opt/homebrew/bin/catalyst serve
+[debug] [2025-08-12T05:46:16.302Z] : CLI Version:  1.18.0-beta.12
+[debug] [2025-08-12T05:46:16.302Z] : Platform:     darwin
+[debug] [2025-08-12T05:46:16.302Z] : Node Version: v24.4.1
+[debug] [2025-08-12T05:46:16.302Z] : Time:         Tue Aug 12 2025 11:16:16 GMT+0530 (India Standard Time)
+[debug] [2025-08-12T05:46:16.302Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T05:46:16.302Z] : 
+[debug] [2025-08-12T05:46:16.556Z] : > authorizing via signed-in user option
+[debug] [2025-08-12T05:46:16.556Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2025-08-12T05:46:16.562Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052 
+
+[debug] [2025-08-12T05:46:16.638Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:46:16 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:46:16.639Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/environment 
+
+[debug] [2025-08-12T05:46:16.682Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:46:16 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:46:16.805Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2025-08-12T05:46:17.023Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:46:17 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T05:46:17.024Z] : unknown eol undefined hence skipping check
+[info] [2025-08-12T05:46:17.387Z] : 
+[info] [2025-08-12T05:46:17.388Z] : ℹ Client[angular-app]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2025-08-12T05:46:17.388Z] : 
+[info] [2025-08-12T05:46:17.649Z] : 
+[info] [2025-08-12T05:46:17.649Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2025-08-12T05:46:17.649Z] : ℹ cricket-live-score-update: http://localhost:3000/server/cricket-live-score-update/
+[info] [2025-08-12T05:46:17.649Z] : 
+[info] [2025-08-12T05:46:17.649Z] : 
+[info] [2025-08-12T05:46:17.649Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-08-12T05:46:17.649Z] : ℹ client[angular-app]: http://localhost:3000/app/
+[info] [2025-08-12T05:46:17.649Z] : 
+[info] [2025-08-12T05:46:18.506Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2025-08-12T05:46:24.437Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   2.55 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 238.11 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 140.06 kB | 
+[Angular-plugin]: main.js               | main          |  63.63 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  49.80 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   3.03 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:46:24.433Z - Hash: 0a773d48ca5a4f0a - Time: 5156ms
+[info] [2025-08-12T05:46:24.438Z] : [Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:96:19 - error TS2339: Property 'onopen' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 96       datastreams.onopen = () => {
+[Angular-plugin]:                      ~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:19 - error TS2339: Property 'onmessage' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.onmessage = (event) => {
+[Angular-plugin]:                       ~~~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:104:32 - error TS7006: Parameter 'event' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 104       datastreams.onmessage = (event) => {
+[Angular-plugin]:                                    ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:19 - error TS2339: Property 'onerror' does not exist on type 'DataStreamsWebSocket'.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.onerror = (error) => {
+[Angular-plugin]:                       ~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:111:30 - error TS7006: Parameter 'error' implicitly has an 'any' type.
+[Angular-plugin]: 
+[Angular-plugin]: 111       datastreams.onerror = (error) => {
+[Angular-plugin]:                                  ~~~~~
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: Error: src/app/datastream/app.datastream.ts:116:19 - error TS2551: Property 'onclose' does not exist on type 'DataStreamsWebSocket'. Did you mean 'close'?
+[Angular-plugin]: 
+[Angular-plugin]: 116       datastreams.onclose = () => {
+[Angular-plugin]:                       ~~~~~~~
+[Angular-plugin]: 
+[Angular-plugin]:   node_modules/@zcatalyst/datastreams/dist-types/web-socket.d.ts:136:5
+[Angular-plugin]:     136     close(): void;
+[Angular-plugin]:             ~~~~~
+[Angular-plugin]:     'close' is declared here.
+[Angular-plugin]: 
+[Angular-plugin]: 
+[Angular-plugin]: 
+[info] [2025-08-12T05:46:24.438Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:5000, open your browser on http://127.0.0.1:5000/app **
+[Angular-plugin]: 
+[info] [2025-08-12T05:46:24.438Z] : [Angular-plugin]: 
+[Angular-plugin]: ✖ Failed to compile.
+[info] [2025-08-12T05:49:54.782Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files | Names   | Raw Size
+[Angular-plugin]: main.js             | main    | 63.65 kB | 
+[Angular-plugin]: runtime.js          | runtime | 49.80 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:49:54.775Z - Hash: 77e327d4b9eade6c - Time: 383ms
+[info] [2025-08-12T05:49:54.782Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T05:49:54.797Z] : [Angular-plugin]: Please visit this url to access angular-app: http://localhost:3000/app/
+[debug] [2025-08-12T05:50:23.010Z] : proxy closed
+[info] [2025-08-12T05:51:56.326Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.77e327d4b9eade6c.hot-update.js       | main    | 93.21 kB | 
+[Angular-plugin]: runtime.js, runtime.77e327d4b9eade6c.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:51:56.322Z - Hash: 78813d77a523be50 - Time: 343ms
+[info] [2025-08-12T05:51:56.327Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T05:54:18.092Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.78813d77a523be50.hot-update.js       | main    | 97.42 kB | 
+[Angular-plugin]: runtime.js, runtime.78813d77a523be50.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:54:18.088Z - Hash: 168d702ef500617a - Time: 412ms
+[info] [2025-08-12T05:54:18.092Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[debug] [2025-08-12T05:54:18.104Z] : > refreshing access token <
+[debug] [2025-08-12T05:54:18.106Z] : >>>> HTTP REQUEST : POST https://accounts.localzoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2025-08-12T05:54:18.547Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 05:54:18 GMT","content-type":"application/json;charset=UTF-8","content-length":"2638","connection":"close","cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2025-08-12T05:56:03.377Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.168d702ef500617a.hot-update.js       | main    | 97.42 kB | 
+[Angular-plugin]: runtime.js, runtime.168d702ef500617a.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:56:03.372Z - Hash: 916349ee992a28de - Time: 335ms
+[info] [2025-08-12T05:56:03.377Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T05:56:47.693Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.916349ee992a28de.hot-update.js       | main    | 97.42 kB | 
+[Angular-plugin]: runtime.js, runtime.916349ee992a28de.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:56:47.689Z - Hash: 687bb104b1b7c817 - Time: 227ms
+[info] [2025-08-12T05:56:47.694Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T05:58:39.750Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.687bb104b1b7c817.hot-update.js       | main    | 97.61 kB | 
+[Angular-plugin]: runtime.js, runtime.687bb104b1b7c817.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T05:58:39.746Z - Hash: 7f3d67926675d9ad - Time: 332ms
+[info] [2025-08-12T05:58:39.750Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:00:23.228Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.7f3d67926675d9ad.hot-update.js       | main    | 97.61 kB | 
+[Angular-plugin]: runtime.js, runtime.7f3d67926675d9ad.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:00:23.223Z - Hash: 5f6f0d203ff22747 - Time: 403ms
+[info] [2025-08-12T06:00:23.228Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:02:29.653Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.5f6f0d203ff22747.hot-update.js       | main    | 97.74 kB | 
+[Angular-plugin]: runtime.js, runtime.5f6f0d203ff22747.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:02:29.649Z - Hash: f405d57f5949ad56 - Time: 355ms
+[info] [2025-08-12T06:02:29.653Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:02:44.769Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.f405d57f5949ad56.hot-update.js       | main    | 97.82 kB | 
+[Angular-plugin]: runtime.js, runtime.f405d57f5949ad56.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:02:44.763Z - Hash: d0746837cd85f0f5 - Time: 197ms
+[info] [2025-08-12T06:02:44.769Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:03:04.681Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.d0746837cd85f0f5.hot-update.js       | main    | 98.78 kB | 
+[Angular-plugin]: runtime.js, runtime.d0746837cd85f0f5.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:03:04.677Z - Hash: ba64fd23b66ff249 - Time: 254ms
+[info] [2025-08-12T06:03:04.681Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:03:14.540Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.ba64fd23b66ff249.hot-update.js       | main    | 98.92 kB | 
+[Angular-plugin]: runtime.js, runtime.ba64fd23b66ff249.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:03:14.536Z - Hash: 2856c3379675cc4a - Time: 207ms
+[info] [2025-08-12T06:03:14.540Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:03:33.759Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.2856c3379675cc4a.hot-update.js       | main    | 98.97 kB | 
+[Angular-plugin]: runtime.js, runtime.2856c3379675cc4a.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:03:33.755Z - Hash: acb13cf7a5e7e47f - Time: 188ms
+[info] [2025-08-12T06:03:33.760Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:03:57.103Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.acb13cf7a5e7e47f.hot-update.js       | main    | 99.12 kB | 
+[Angular-plugin]: runtime.js, runtime.acb13cf7a5e7e47f.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:03:57.097Z - Hash: d19eeaaad4bca1a2 - Time: 269ms
+[info] [2025-08-12T06:03:57.104Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:04:14.484Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.d19eeaaad4bca1a2.hot-update.js       | main    | 100.13 kB | 
+[Angular-plugin]: runtime.js, runtime.d19eeaaad4bca1a2.hot-update.js | runtime |  50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:04:14.481Z - Hash: 9df77e0e99608730 - Time: 158ms
+[info] [2025-08-12T06:04:14.484Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:04:30.580Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.9df77e0e99608730.hot-update.js       | main    | 102.71 kB | 
+[Angular-plugin]: runtime.js, runtime.9df77e0e99608730.hot-update.js | runtime |  50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:04:30.576Z - Hash: bfa34497723e86ec - Time: 182ms
+[info] [2025-08-12T06:04:30.580Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:05:00.943Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   |  Raw Size
+[Angular-plugin]: main.js, main.bfa34497723e86ec.hot-update.js       | main    | 104.09 kB | 
+[Angular-plugin]: runtime.js, runtime.bfa34497723e86ec.hot-update.js | runtime |  50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:05:00.940Z - Hash: 33db4fccc5eb6a86 - Time: 178ms
+[info] [2025-08-12T06:05:00.944Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:10:01.961Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.33db4fccc5eb6a86.hot-update.js       | main    | 99.12 kB | 
+[Angular-plugin]: runtime.js, runtime.33db4fccc5eb6a86.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:10:01.958Z - Hash: 11bd0ccec0336f6b - Time: 272ms
+[info] [2025-08-12T06:10:01.961Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:11:26.343Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.11bd0ccec0336f6b.hot-update.js       | main    | 97.33 kB | 
+[Angular-plugin]: runtime.js, runtime.11bd0ccec0336f6b.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:11:26.339Z - Hash: b7b72c66a990a0ad - Time: 313ms
+[info] [2025-08-12T06:11:26.343Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:13:32.125Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.b7b72c66a990a0ad.hot-update.js       | main    | 97.31 kB | 
+[Angular-plugin]: runtime.js, runtime.b7b72c66a990a0ad.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:13:32.121Z - Hash: 30ed5b5abcbc900d - Time: 209ms
+[info] [2025-08-12T06:13:32.125Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:13:59.140Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.30ed5b5abcbc900d.hot-update.js       | main    | 97.30 kB | 
+[Angular-plugin]: runtime.js, runtime.30ed5b5abcbc900d.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:13:59.134Z - Hash: cd8caccc91399833 - Time: 164ms
+[info] [2025-08-12T06:13:59.140Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:14:31.541Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.cd8caccc91399833.hot-update.js       | main    | 97.29 kB | 
+[Angular-plugin]: runtime.js, runtime.cd8caccc91399833.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:14:31.535Z - Hash: 3e0792f7f647d06f - Time: 259ms
+[info] [2025-08-12T06:14:31.541Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:15:15.329Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
+[Angular-plugin]: main.js, main.3e0792f7f647d06f.hot-update.js       | main    | 97.18 kB | 
+[Angular-plugin]: runtime.js, runtime.3e0792f7f647d06f.hot-update.js | runtime | 50.14 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 3 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:15:15.326Z - Hash: ef93d301178a32bb - Time: 205ms
+[info] [2025-08-12T06:15:15.330Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:16:01.788Z] : Shutting down server
+[debug] [2025-08-12T06:16:01.808Z] : proxy closed
+[debug] [2025-08-12T06:16:01.808Z] : proxy closed
+[info] [2025-08-12T06:16:01.887Z] : 
+[info] [2025-08-12T06:16:01.887Z] : ✔ Shutdown complete
+[debug] [2025-08-12T06:16:01.887Z] : NO ERRORS REGISTERED
+[debug] [2025-08-12T06:16:01.888Z] : EXEC ENDED with event: serve, message: success
+[debug] [2025-08-12T06:16:01.888Z] : TOTAL DURATION OF COMMAND EXEC : 1785337
+[debug] [2025-08-12T06:16:01.892Z] : >>>> HTTP REQUEST : POST https://consolefeature1.catalyst.localzoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-08-12T06:16:02.074Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 06:16:02 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T06:16:56.823Z] : 
+[debug] [2025-08-12T06:16:56.824Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T06:16:56.825Z] : Command:      /opt/homebrew/Cellar/node/24.4.1/bin/node /opt/homebrew/bin/catalyst serve
+[debug] [2025-08-12T06:16:56.825Z] : CLI Version:  1.18.0-beta.12
+[debug] [2025-08-12T06:16:56.825Z] : Platform:     darwin
+[debug] [2025-08-12T06:16:56.825Z] : Node Version: v24.4.1
+[debug] [2025-08-12T06:16:56.825Z] : Time:         Tue Aug 12 2025 11:46:56 GMT+0530 (India Standard Time)
+[debug] [2025-08-12T06:16:56.825Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T06:16:56.825Z] : 
+[debug] [2025-08-12T06:16:57.084Z] : > authorizing via signed-in user option
+[debug] [2025-08-12T06:16:57.084Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2025-08-12T06:16:57.089Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052 
+
+[debug] [2025-08-12T06:16:57.208Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 06:16:57 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T06:16:57.209Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/environment 
+
+[debug] [2025-08-12T06:16:57.287Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 06:16:57 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T06:16:57.439Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2025-08-12T06:16:57.712Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 06:16:57 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[warn] [2025-08-12T06:16:57.718Z] : ⚠ skipping serve of function [cricket-live-score-update] since there is no valid catalyst-config.json file present
+[warn] [2025-08-12T06:16:57.718Z] : ⚠ functions: No targets are ready to be served in local
+[debug] [2025-08-12T06:16:57.719Z] : No basic functions to add
+[info] [2025-08-12T06:16:57.719Z] : 
+[info] [2025-08-12T06:16:57.719Z] : ℹ Client[angular-app]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2025-08-12T06:16:57.719Z] : 
+[info] [2025-08-12T06:16:57.958Z] : 
+[info] [2025-08-12T06:16:57.958Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-08-12T06:16:57.958Z] : ℹ client[angular-app]: http://localhost:3000/app/
+[info] [2025-08-12T06:16:57.958Z] : 
+[info] [2025-08-12T06:16:58.859Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2025-08-12T06:17:01.234Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   2.55 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 238.11 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 140.06 kB | 
+[Angular-plugin]: main.js               | main          |  65.62 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  49.80 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   3.04 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:17:01.221Z - Hash: 9a7ffc19d96ff5cd - Time: 1522ms
+[info] [2025-08-12T06:17:01.235Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:5000, open your browser on http://127.0.0.1:5000/app **
+[Angular-plugin]: 
+[info] [2025-08-12T06:17:01.235Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:17:01.243Z] : [Angular-plugin]: Please visit this url to access angular-app: http://localhost:3000/app/
+[debug] [2025-08-12T06:17:06.009Z] : proxy closed
+[debug] [2025-08-12T06:17:10.014Z] : proxy closed
+[info] [2025-08-12T06:17:12.556Z] : Shutting down server
+[debug] [2025-08-12T06:17:12.579Z] : proxy closed
+[debug] [2025-08-12T06:17:12.580Z] : proxy closed
+[debug] [2025-08-12T06:17:12.580Z] : proxy closed
+[info] [2025-08-12T06:17:12.580Z] : 
+[info] [2025-08-12T06:17:12.580Z] : ✔ Shutdown complete
+[debug] [2025-08-12T06:17:12.580Z] : NO ERRORS REGISTERED
+[debug] [2025-08-12T06:17:12.580Z] : EXEC ENDED with event: serve, message: success
+[debug] [2025-08-12T06:17:12.580Z] : TOTAL DURATION OF COMMAND EXEC : 15501
+[debug] [2025-08-12T06:17:12.585Z] : >>>> HTTP REQUEST : POST https://consolefeature1.catalyst.localzoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-08-12T06:17:12.731Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 06:17:12 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T06:17:51.617Z] : 
+[debug] [2025-08-12T06:17:51.619Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T06:17:51.619Z] : Command:      /opt/homebrew/Cellar/node/24.4.1/bin/node /opt/homebrew/bin/catalyst serve
+[debug] [2025-08-12T06:17:51.619Z] : CLI Version:  1.18.0-beta.12
+[debug] [2025-08-12T06:17:51.619Z] : Platform:     darwin
+[debug] [2025-08-12T06:17:51.619Z] : Node Version: v24.4.1
+[debug] [2025-08-12T06:17:51.619Z] : Time:         Tue Aug 12 2025 11:47:51 GMT+0530 (India Standard Time)
+[debug] [2025-08-12T06:17:51.619Z] : ----------------------------------------------------------------------
+[debug] [2025-08-12T06:17:51.619Z] : 
+[debug] [2025-08-12T06:17:51.853Z] : > authorizing via signed-in user option
+[debug] [2025-08-12T06:17:51.853Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.apigateway.apis.READ","ZohoCatalyst.apigateway.READ","ZohoCatalyst.segments.ALL","ZohoCatalyst.cache.READ","ZohoCatalyst.cache.CREATE","ZohoCatalyst.cache.DELETE","ZohoCatalyst.projects.ALL","ZohoCatalyst.cron.ALL","ZohoCatalyst.zcql.CREATE","ZohoCatalyst.projects.users.READ","ZohoCatalyst.projects.users.CREATE","ZohoCatalyst.projects.users.DELETE","ZohoCatalyst.projects.users.UPDATE","ZohoCatalyst.authentication.CREATE","ZohoCatalyst.email.CREATE","ZohoCatalyst.tables.ALL","ZohoCatalyst.tables.rows.ALL","ZohoCatalyst.tables.columns.ALL","ZohoCatalyst.tables.bulk.CREATE","ZohoCatalyst.tables.bulk.READ","ZohoCatalyst.folders.ALL","ZohoCatalyst.files.CREATE","ZohoCatalyst.files.READ","ZohoCatalyst.files.DELETE","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.eventlistners.ALL","ZohoCatalyst.eventlisteners.produce","ZohoCatalyst.security.rules.Read","ZohoCatalyst.security.rules.Update","ZohoCatalyst.notifications.mobile","ZohoCatalyst.notifications.web","ZohoCatalyst.search.READ","ZohoCatalyst.mlkit.READ","QuickML.deployment.READ","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.dataverse.execute","ZohoCatalyst.circuits.execution.DELETE","ZohoCatalyst.circuits.execution.READ","ZohoCatalyst.circuits.execute","ZohoCatalyst.appsail.Read","ZohoCatalyst.jobpool.READ","ZohoCatalyst.job.ALL","ZohoCatalyst.nosql.READ","ZohoCatalyst.nosql.rows.ALL"]
+[debug] [2025-08-12T06:17:51.859Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052 
+
+[debug] [2025-08-12T06:17:51.928Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 06:17:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T06:17:51.930Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/environment 
+
+[debug] [2025-08-12T06:17:52.019Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 06:17:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T06:17:52.159Z] : >>>> HTTP REQUEST : GET https://consolefeature1.catalyst.localzoho.com/baas/v1/project/11365000000016052/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic,job"}
+
+[debug] [2025-08-12T06:17:52.424Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 06:17:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2025-08-12T06:17:52.430Z] : unknown eol undefined hence skipping check
+[info] [2025-08-12T06:17:52.819Z] : 
+[info] [2025-08-12T06:17:52.819Z] : ℹ Client[angular-app]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2025-08-12T06:17:52.819Z] : 
+[info] [2025-08-12T06:17:53.020Z] : 
+[info] [2025-08-12T06:17:53.020Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2025-08-12T06:17:53.020Z] : ℹ cricket-live-score-update: http://localhost:3000/server/cricket-live-score-update/
+[info] [2025-08-12T06:17:53.020Z] : 
+[info] [2025-08-12T06:17:53.020Z] : 
+[info] [2025-08-12T06:17:53.020Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-08-12T06:17:53.020Z] : ℹ client[angular-app]: http://localhost:3000/app/
+[info] [2025-08-12T06:17:53.020Z] : 
+[info] [2025-08-12T06:17:53.863Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
+[info] [2025-08-12T06:17:56.613Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files   | Names         |  Raw Size
+[Angular-plugin]: vendor.js             | vendor        |   2.55 MB | 
+[Angular-plugin]: polyfills.js          | polyfills     | 238.11 kB | 
+[Angular-plugin]: styles.css, styles.js | styles        | 140.06 kB | 
+[Angular-plugin]: main.js               | main          |  65.62 kB | 
+[Angular-plugin]: runtime.js            | runtime       |  49.80 kB | 
+[Angular-plugin]: 
+[Angular-plugin]:                       | Initial Total |   3.04 MB
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2025-08-12T06:17:56.598Z - Hash: e390c0128676c7d3 - Time: 1935ms
+[info] [2025-08-12T06:17:56.613Z] : [Angular-plugin]: 
+[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:5000, open your browser on http://127.0.0.1:5000/app **
+[Angular-plugin]: 
+[info] [2025-08-12T06:17:56.613Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2025-08-12T06:17:56.621Z] : [Angular-plugin]: Please visit this url to access angular-app: http://localhost:3000/app/
+[debug] [2025-08-12T06:18:16.010Z] : proxy closed
+[debug] [2025-08-12T06:18:18.791Z] : proxy closed
+[info] [2025-08-12T06:18:24.106Z] : Shutting down server
+[debug] [2025-08-12T06:18:24.127Z] : proxy closed
+[debug] [2025-08-12T06:18:24.127Z] : proxy closed
+[info] [2025-08-12T06:18:24.188Z] : 
+[info] [2025-08-12T06:18:24.188Z] : ✔ Shutdown complete
+[debug] [2025-08-12T06:18:24.188Z] : NO ERRORS REGISTERED
+[debug] [2025-08-12T06:18:24.188Z] : EXEC ENDED with event: serve, message: success
+[debug] [2025-08-12T06:18:24.188Z] : TOTAL DURATION OF COMMAND EXEC : 32339
+[debug] [2025-08-12T06:18:24.192Z] : >>>> HTTP REQUEST : POST https://consolefeature1.catalyst.localzoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-08-12T06:18:24.278Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 12 Aug 2025 06:18:24 GMT","content-length":"0","connection":"close","x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+

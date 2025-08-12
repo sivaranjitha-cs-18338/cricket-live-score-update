@@ -1,0 +1,15 @@
+{
+	"name": "cricket-live-score-update",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "sivaranjitha.cs@zohotest.com",
+	"dependencies": {
+		"@zcatalyst/auth": "file:../../../../zcatalyst-sdk-js-1/packages/auth/zcatalyst-auth-0.0.2.tgz",
+		"@zcatalyst/auth-client": "file:../../../../zcatalyst-sdk-js-1/packages/auth-client/zcatalyst-auth-client-0.0.2.tgz",
+		"@zcatalyst/datastreams": "file:../../../../zcatalyst-sdk-js-1/packages/datastreams/zcatalyst-datastreams-1.0.0.tgz",
+		"@zcatalyst/transport": "file:../../../../zcatalyst-sdk-js-1/packages/transport/zcatalyst-transport-0.0.2.tgz",
+		"@zcatalyst/utils": "file:../../../../zcatalyst-sdk-js-1/packages/utils/zcatalyst-utils-0.0.2.tgz",
+		"ws": "^8.18.3",
+		"zcatalyst-sdk-node": "latest"
+	}
+}
